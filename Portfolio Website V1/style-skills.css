@@ -1,0 +1,99 @@
+/* ////////////////////////////////////////////////////////////////////// */
+
+/*
+//
+// CSS For project pages
+//
+*/
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.title-top
+{
+  color: lightslategray;
+  background-color: #1d1919;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  border-radius: 20px;
+}
+.title-top hr
+{
+  border-top: 2px solid #575757;
+  width: 250px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.skill-title
+{
+  margin-top: 30px;
+  color: lightslategray;
+  background-color: #1d1919;
+
+}
+.skill-title hr
+{
+  margin: 0px;
+  border-top: 2px solid #575757;
+  width: 400px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.skill-cards
+{
+  min-width: 100%;
+
+  color: lightslategray;
+  background-color: #1d1919;
+
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+  margin-top: 20px;
+}
+.skill-cards-image
+{
+  align-self: center;
+  height: 200px;
+  width: 200px;;
+}
+.skill-cards-header
+{
+  color: lightslategray;
+  background-color: #282828;
+
+  height:  45px;
+  max-height: 45px;
+
+  padding-bottom: 5px;   
+  padding-top: 7px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  border-radius:5px;
+}
+.skill-cards-body
+{
+  color: lightslategray;
+  background-color: #282828;
+
+
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius:5px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */

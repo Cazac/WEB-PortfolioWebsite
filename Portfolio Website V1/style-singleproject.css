@@ -1,0 +1,175 @@
+/* ////////////////////////////////////////////////////////////////////// */
+
+/*
+//
+// CSS For project pages
+//
+*/
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.title-top
+{
+  color: #778899;
+  background-color: #1d1919;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 20px;
+}
+.title-top hr
+{
+  border-top: 2px solid #575757;
+  width: 300px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+.carousel-item {
+
+  max-height: 500px;
+
+  text-align:center;
+  background-color:black;
+
+}
+
+.slide-show {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+
+.project-top
+{
+  color: lightslategray;
+  background-color: #1d1919;
+
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  height: 350px;
+
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-radius:5px;
+}
+.project-top hr
+{
+  border-top: 2px solid #575757;
+  width: 300px;
+}
+
+.project-bottom
+{
+  color: #778899;
+  background-color: #1d1919;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 20px;
+}
+
+
+
+
+
+.about-bottom
+{
+  color: lightslategray;
+
+  background-color: #1d1919;
+
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+  border-radius:5px;
+}
+.about-bottom hr
+{
+  border-top: 2px solid #575757;
+  width: 300px;
+}
+
+.hobby-img
+{
+  border-radius:5px;
+  height: 50px;
+  width: 50px;
+
+/*
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+*/
+}
+
+.pfp-img
+{
+
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+
+
+  margin-top: 5%;
+  margin-left: 5%;
+
+  width: 90%;
+  height: 90%;
+
+  border-radius:50px;
+}
+
+.project-name-title
+{
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project-name-title hr
+{
+  border-top: 2px solid #575757;
+  width: 500px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */

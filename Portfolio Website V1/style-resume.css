@@ -1,0 +1,306 @@
+/* ////////////////////////////////////////////////////////////////////// */
+
+/*
+//
+// CSS For project pages
+//
+*/
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.work-item-container{max-width:340px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;text-align:center;overflow:hidden}
+.work-item{height:350px;border:1.8px solid;border-color:#545454;border-radius:5px;position:relative;transition:all .3s ease-in-out;overflow:hidden}
+.work-item-bg{position:absolute;top:0;left:0;right:0;bottom:0;background-color:black;background-size:cover;background-repeat:no-repeat;background-position:center;transition:all .3s ease-in-out}
+.work-item-bg:hover{transform:scale(1.1)}
+.work-item:hover{cursor:pointer;border-color:#94c1e4}
+.work-item-title-container{width:100%;background-color:rgba(0,0,0,0.7);position:absolute;bottom:0;text-align:center;line-height:35px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;pointer-events:none;padding-bottom:12px;padding-top:12px}
+.work-item-title{font-family:'Quicksand',sans-serif;color:white;font-weight:100;font-size:30px}
+.work-item-desc-container{margin-top:10px;max-width:90%;bottom:0;text-align:justify;display:inline-block}
+.work-item-desc{font-family:'Quicksand',sans-serif;color:white;font-weight:100;font-size:15px}
+.work-item-contrib-cell{padding-right:5px;text-align:left;vertical-align:top;text-wrap:normal;word-wrap:break-word;font-size:19px}
+.work-item-tags-container{margin-top:10px;width:100%;text-align:left;overflow:hidden}
+.work-item-tag
+{
+  height:21px;
+  min-width:30px;
+  padding-left:7px;
+  padding-right:7px
+  ;color:white;
+  font-family:'Quicksand',sans-serif;
+  font-weight:100;font-size:14px;float:left;
+  background-color:#813772;margin-right:5px;
+  margin-top:5px;text-align:center;
+  border-radius:4px
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.skill-cards
+{
+  color: lightslategray;
+  background-color: #1d1919;
+
+  border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+}
+.skill-cards-body
+{
+  color: lightslategray;
+  background-color: #282828;
+
+  height: 180px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius:5px;
+}
+.skill-cards-image
+{
+  align-self: center;
+  height: 300px;
+  width: 300px;;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.about-me
+{
+  color: lightslategray;
+  background-color: #282828;
+
+}
+.about-me hr
+{
+  border-top: 2px solid #575757;
+  width: 300px;
+}
+
+.project-snapshots-upper
+{
+  color: lightslategray;
+  background-color: #1d1919;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*
+  background: linear-gradient(#282828, #1d1919, #1d1919, #1d1919,  #1d1919, #1d1919, #282828);
+  */
+
+}
+.project-snapshots-upper hr
+{
+  border-top: 2px solid #575757;
+  
+  width: 400px;
+}
+
+.skill-snapshots-upper
+{
+  color: lightslategray;
+  background-color: #1d1919;
+
+}
+.skill-snapshots-upper hr
+{
+  border-top: 2px solid #575757;
+  width: 400px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.carousel-item {
+  height: 600px;
+  width: 100%;
+  text-align:center;
+  background-color:black;
+}
+
+.slide-show {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.project-icon
+{
+  height: 350px;
+  border-radius:5px;
+  border-left:5px;
+}
+
+.logo-text
+{
+  font-size: 1.5em;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.tile-section
+{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.tile-item
+{
+  height:350px;
+  border:2.2px solid;
+  border-color:#545454;
+  border-radius:5px;
+  position:relative;
+  transition:all .25s ease-in-out;
+  overflow:hidden
+}
+.tile-item:hover
+{
+  cursor:pointer;
+  border-color:#ffffff
+}
+
+.tile-item-bg
+{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:black;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  transition: all .25s ease-in-out
+}
+.tile-item-bg:hover
+{
+  transform:scale(1.1)
+}
+
+.tile-item-container
+{
+  max-width:350px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align:center;
+  overflow:hidden
+}
+
+.tile-item-title-container
+{
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  position:absolute;
+  bottom:0;text-align:center;
+  line-height:35px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  pointer-events:none;
+  padding-bottom:12px;
+  padding-top:12px
+}
+.tile-item-title
+{
+  font-family:'Quicksand',sans-serif;
+  color:white;
+  font-weight:100;
+  font-size:30px
+}
+
+ /* ////////////////////////////////////////////////////////////////////// */
+
+ .work-item-bg:hover
+ {
+   transform:scale(1.1)
+ }
+ .work-item:hover
+ {
+   cursor:pointer;
+   border-color:#94c1e4
+ }
+ .work-section-container
+ {
+   display:block;
+   margin-top:50px;
+   margin-bottom:50px
+ }
+ .work-section-contents
+ {
+   margin-left:0;
+   margin-right:0
+ }
+ .work-item-container
+ {
+   max-width:340px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:50px;
+   margin-bottom:50px;
+   text-align:center;
+   overflow:hidden
+ }
+ .work-item
+ {
+   height:350px;
+   border:1.8px solid;
+   border-color:#545454;
+   border-radius:5px;
+   position:relative;
+   transition:all .3s ease-in-out;
+   overflow:hidden
+ }
+ .work-item-bg
+ {
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   background-color:black;
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-position:center;
+   transition:all .3s ease-in-out
+ }
+
+ .work-item-title-container
+ {
+   width:100%;
+   background-color:rgba(0,0,0,0.7);
+   position:absolute;
+   bottom:0;
+   text-align:center;
+   line-height:35px;
+   border-bottom-left-radius:5px;
+   border-bottom-right-radius:5px;
+   pointer-events:none;
+   padding-bottom:12px;
+   padding-top:12px
+ }
+ .work-item-title
+ {
+   font-family:'Quicksand',sans-serif;
+   color:white;
+   font-weight:100;
+   font-size:30px
+ }
+ .work-item-desc-container
+ {
+   margin-top:10px;
+   max-width:90%;
+   bottom:0;
+   text-align:justify;
+   display:inline-block
+ }
+ .work-item-desc
+ {
+   font-family:'Quicksand',sans-serif;
+   color:white;
+   font-weight:100;
+   font-size:15px
+ }
+
+/* ////////////////////////////////////////////////////////////////////// */
