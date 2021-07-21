@@ -54,8 +54,6 @@
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
 
-
-
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
 
@@ -90,27 +88,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 /* ////////////////////////////////////////////////////////////////////// */
 
-
 .carousel-item {
-
   max-height: 500px;
-
   text-align:center;
   background-color:black;
-
 }
-
-.slide-show {
-  height: 100%;
-  padding-bottom: 0;
-}
-
 
 .project-top
 {
   color: lightslategray;
   background-color: #1d1919;
-
 
   margin-right: 10px;
   margin-left: 10px;
@@ -146,8 +133,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
   border-radius: 20px;
 }
 
+/* ////////////////////////////////////////////////////////////////////// */
 
-.project-gif-container
+.project-info-container
 {
   border-radius: 20px;
 
@@ -157,74 +145,26 @@ Extra (xl) large devices (large desktops, 1200px and up)
   background-color: #111111;
 }
 
+.project-desc-container
+{
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 15px; 
+}
 
 .project-infoButton-container
 {
   border-radius: 20px;
-
 
   width: 100%; 
   margin-top: -18px; 
   padding-top: 15px; 
   padding-bottom: 15px; 
   background-color: #111111;
-
 }
 
-
-
-
-.about-bottom
-{
-  color: lightslategray;
-
-  background-color: #1d1919;
-
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-
-  border-radius:5px;
-}
-.about-bottom hr
-{
-  border-top: 2px solid #575757;
-  width: 300px;
-}
-
-.hobby-img
-{
-  border-radius:5px;
-  height: 50px;
-  width: 50px;
-
-/*
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-*/
-}
-
-
-.pfp-img
-{
-
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-
-
-  margin-top: 5%;
-  margin-left: 5%;
-
-  width: 90%;
-  height: 90%;
-
-  border-radius:50px;
-}
+/* ////////////////////////////////////////////////////////////////////// */
 
 .project-name-title
 {
@@ -239,38 +179,23 @@ Extra (xl) large devices (large desktops, 1200px and up)
   width: 500px;
 }
 
-.key-features
+.info-img
 {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-radius:5px;
+  margin-bottom: -5px;
+  width: 60%;
 }
-
-
-
 
 .linkable-img
 {
-  height: 115px;
-  width: 115px;
-
+  width: 100%;
   margin-bottom: 10px;
-
-  /*
-    border-radius:5px;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-  */
 }
 
 .info-links-btn
 {
-  height: 175px;
-  width: 175px;
-
+  height: 100%;
+  width: 100%;
 
   font-size: large;
   font-weight: bold;
@@ -279,15 +204,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
   border-right: 3px solid #575757;
   border-bottom: 3px solid #575757;
   border-top: 3px solid #575757;
+  border-radius: 20px;
 
   padding-top: 5px;
   padding-bottom: 5px;
-
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px;
-
-  border-radius: 20px;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
