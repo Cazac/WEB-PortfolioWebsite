@@ -210,4 +210,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
   padding-bottom: 5px;
 }
 
+.dropshadow
+{
+
+  box-shadow: 10px 10px 2px #1a1a1a;
+}
+
 /* ////////////////////////////////////////////////////////////////////// */

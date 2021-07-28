@@ -56,6 +56,27 @@
   width: 500px;
 }
 
+
+.minidropshadow
+{
+
+  box-shadow: 5px 5px 2px #1a1a1a;
+}
+
+.smalldropshadow
+{
+
+  border-radius: 5px;
+  box-shadow: 8px 8px 2px #1a1a1a;
+}
+
+.dropshadow
+{
+
+  box-shadow: 10px 10px 2px #1a1a1a;
+}
+
+
 /* ////////////////////////////////////////////////////////////////////// */
 
 .title-top
@@ -132,6 +153,7 @@
 
 .tile-item-container
 {
+  padding-right: 9px;
   max-width:350px;
   margin-left:auto;
   margin-right:auto;
@@ -146,10 +168,11 @@
   width:100%;
   background-color:rgba(0,0,0,0.7);
   position:absolute;
-  bottom:0;text-align:center;
+  bottom:0;
+  text-align:center;
   line-height:35px;
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
   pointer-events:none;
   padding-bottom:12px;
   padding-top:12px
@@ -166,7 +189,8 @@
 
 .tile-item-tags-container
 {
-  margin-top:8px;
+  margin-top: 10px;
+  padding-bottom: 8px;
   width:100%;
   text-align:left;
   overflow:hidden
