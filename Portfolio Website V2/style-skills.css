@@ -46,17 +46,31 @@
 
 /* ////////////////////////////////////////////////////////////////////// */
 
+.thin-border
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.dropshadow
+{
+  border-radius: 5px;
+  box-shadow: 10px 10px 2px #1a1a1a;
+}
+
+.progressBG
+{
+  background-color: #cecece;
+}
+
 .skill-cards
 {
   min-width: 100%;
 
   color: lightslategray;
   background-color: #1d1919;
-
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
 
   margin-top: 20px;
 }

@@ -213,14 +213,31 @@
 }
 
 
-.tagType-ProjectType
+.tagType-GameProject
+{
+  background-color:#3b56ac;
+}
+
+.tagType-GamePrototype
+{
+  background-color:#2a7b5c;
+}
+
+.tagType-GameTool
+{
+  background-color:#b4703b;
+}
+
+
+
+.tagType-Unity
 {
   background-color:#813772;
 }
 
-.tagType-Engine
+.tagType-Unreal
 {
-  background-color:#cc4b4b;
+  background-color:#216976;
 }
 
 .tagType-Language
@@ -228,17 +245,40 @@
   background-color:#674aaa;
 }
 
-
-.tagType-Tools
+.tagType-Skills
 {
-  background-color:#436694;
+  background-color:#cc4b4b;
 }
 
-
-.tagType-Tools2
+.tagType-Skills
 {
-  background-color:#2d2ddf;
+  background-color:#cc834b;
 }
 
+.tagType-CSharp
+{
+  background-color:#674aaa;
+}
+
+.tagType-CPlusPlus
+{
+  background-color:#b39f30;
+}
+
+.tagType-Java
+{
+  background-color:#a0aa4a;
+}
+
+.tagType-JavaScript
+{
+  background-color:#80aa4a;
+  background-color:#aa804a;
+  background-color:#a0aa4a;
+  background-color:#a0aa4a;
+  background-color:#a0aa4a;
+  background-color:#a0aa4a;
+  background-color:#a0aa4a;
+}
 
 /* ////////////////////////////////////////////////////////////////////// */
