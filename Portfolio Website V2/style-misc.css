@@ -191,4 +191,14 @@ will-change: transform;
   overflow-y: scroll;
 }
 
+.carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+}
+
 /* ////////////////////////////////////////////////////////////////////// */

@@ -27,48 +27,48 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 /* ////////////////////////////////////////////////////////////////////// */
 
-.about-topLeft
+.about-main
+{
+  color: lightslategray;
+  background-color: #1d1919;
+  margin-top: 20px;
+  border-radius: 5px;
+
+ 
+
+}
+
+.about-pfp
 {
   color: lightslategray;
   background-color: #1d1919;
 
-  min-width: 350px;
-  max-width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
 
-
-  margin-top: 10px;
-  border-radius:5px;
-  margin-right: 1.5%;
+  height: 330px;
 }
 
-.about-topRight
+.about-hobbies
 {
   color: lightslategray;
   background-color: #1d1919;
 
+  margin-bottom: 30px;
+  border-radius: 5px;
 
-  width: 50%;
-
-  margin-top: 10px;
-  border-radius:5px;
+  height: 330px;
 }
 
-.about-topRight hr
+
+
+
+.about-main hr
 {
   border-top: 2px solid #575757;
   width: 350px;
 }
-
-.about-bottom
-{
-  color: lightslategray;
-
-  background-color: #1d1919;
-
-
-  border-radius:5px;
-}
-.about-bottom hr
+.about-hobbies hr
 {
   border-top: 2px solid #575757;
   width: 300px;
@@ -106,18 +106,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 {
 
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
 
-
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-
-  width: 90%;
-  height: 90%;
-
-  border-radius:50px;
+  align-self: center;
+  width: 85%;
 }
 
 .desc-text-container

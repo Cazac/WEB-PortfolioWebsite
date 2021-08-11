@@ -119,7 +119,7 @@
 
 .tile-item
 {
-  height:350px;
+  height:340px;
   border:2.2px solid;
   border-color:#545454;
   border-radius:5px;
@@ -154,7 +154,7 @@
 .tile-item-container
 {
   padding-right: 9px;
-  max-width:350px;
+  max-width:340px;
   margin-left:auto;
   margin-right:auto;
   margin-top: 30px;
@@ -220,7 +220,7 @@
 
 .tagType-GamePrototype
 {
-  background-color:#2a7b5c;
+  background-color:#2a775a;
 }
 
 .tagType-GameTool
@@ -228,57 +228,35 @@
   background-color:#b4703b;
 }
 
+.tagType-BusinessApp
+{
+  background-color:#8c1d70;
+  background-color:#1d5e07;
+}
 
-
-.tagType-Unity
+.tagType-EngineUnity
 {
   background-color:#813772;
 }
 
-.tagType-Unreal
+.tagType-EngineOther
 {
   background-color:#216976;
 }
 
-.tagType-Language
+.tagType-LanguageCSharp
 {
   background-color:#674aaa;
 }
 
-.tagType-Skills
+.tagType-LanguageOther
 {
-  background-color:#cc4b4b;
+  background-color:#a79118;
 }
 
 .tagType-Skills
 {
-  background-color:#cc834b;
-}
-
-.tagType-CSharp
-{
-  background-color:#674aaa;
-}
-
-.tagType-CPlusPlus
-{
-  background-color:#b39f30;
-}
-
-.tagType-Java
-{
-  background-color:#a0aa4a;
-}
-
-.tagType-JavaScript
-{
-  background-color:#80aa4a;
-  background-color:#aa804a;
-  background-color:#a0aa4a;
-  background-color:#a0aa4a;
-  background-color:#a0aa4a;
-  background-color:#a0aa4a;
-  background-color:#a0aa4a;
+  background-color:#973946;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
