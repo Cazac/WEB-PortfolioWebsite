@@ -134,11 +134,16 @@
   
                       <!-- Main Description -->
                       <p>
-       
+                        <i>
+                          Have you ever wondered how thought of how shadows would act if they created and occupied a 
+                          physical space? This project explores these possibilities by having the shadows turn into
+                           real and interactable objects from where a light was projected. 
+                          This is a small-scale prototype developed as contract work to an to be announced unreleased project.
+                          <br>
+                          <br>
+                        </i>
                       </p>
 
-              
-      
 
                         <!-- Icon Sets -->
                         <div class="project-info-container">
@@ -222,16 +227,36 @@
                           <hr>
                           
                           <p class="text-left">
-
+                            The Shadow Meshes project showcases a lot of my skills as a 
+                            programmer to creatively problem solve and design efficient systems. 
+                            I was tasked with making shadows into physical objects which could be 
+                            moved and manipulated within the project. This was an incredibly technical 
+                            and difficult system to create. Yet, this is some of my proudest technological work to date. 
+                            Due to the work being contract work, 
+                            I’m unable to release the code. However, I can provide examples and ideas on how this effect was achieved.
+                            <br>
+                            <br>
+                            <br>
+                            <b>My major roles and tasks done on this project include:</b>
+                            <br>
+                            <br>
+                            - Developed strong programming techniques in the Unity engine
+                            <br>
+                            - Utilized creative problem-solving to design programming solutions
+                            <br>
+                            - Created advanced engineering and programming solution to create mechanics
+                            <br>
+                            - Optimized programming solutions to reach benchmark goals
                             <br> 
-                            <br> 
+                            <br>
                           </p>
+                          
                       
                         <!-- ////////////////////////////////////////////////////////////////////// -->
                     
                         <!-- Section Header -->
                         <h2 class="text-left">
-                          XXX
+                          Generating Shadows
                         </h2>
                         <hr style="width: 100%;">
 
@@ -247,14 +272,26 @@
                               <div class="project-desc-container">
 
                                 <hr style="width: 100%;">
-                                <br> 
-                  
-                                <p class="text-left">
-                  
                                   <br> 
+                                  <p>
+                                    The generation of shadows for this project was quite the uphill battle. I’ve never seen anybody
+                                     implement a mechanic like this before, leaving me with very little research options. The main 
+                                     goal of this mechanic is to shine a light source onto an object and create a physical space where
+                                      a shadow would normally occupy. I had to go through many prototypes before I was able to create 
+                                      the final version of the mechanic. Here is a general overview of how the algorithm works: 
+                                      First you shoot raycasts from the light source out to all of the vertices on the object you 
+                                      would like to create a shadow from. Afterwards, the algorithm then removes any vertices from the
+                                       array that cannot find a direct open-air path to the 3D object. For extra precision, the object 
+                                       itself is not colliding with the raycast but rather a smaller interior object of the exact same 
+                                       model which is scaled down to about 95%. This is so that the corners and edges are a little bit 
+                                       more susceptible to actually getting hit due to Unity’s raycast system not being as precise. 
+                                       From there, nodes are lined up together based off of their proximity and they are paired together 
+                                       to create a simple 4 quad mesh between each of the nodes. After that, all of the meshes are merged together,
+                                        setup with their triangles and UV maps, coloured black and then scaled onto the area that they
+                                        should occupy as a physical object. Finally, a sealing mesh is made around
+                                     the back side of the object and the final mesh is developed and ready for the next frame.
+                                  </p>
                                   <br> 
-                                </p>
-                      
                                 <hr style="width: 100%;">
 
                               </div>
@@ -267,7 +304,7 @@
 
                         <!-- Section Header -->
                         <h2 class="text-left">
-                          XXX
+                          Object Pooling
                         </h2>
                         <hr style="width: 100%;">
 
@@ -283,14 +320,22 @@
                               <div class="project-desc-container">
 
                                 <hr style="width: 100%;">
-                                <br> 
-                  
-                                <p class="text-left">
-                  
                                   <br> 
+                                  <p>
+                                    As the system developed, I realized that spawning and destroying meshes multiple times per
+                                     second became unwieldy and an inappropriate way to deal with the 3D objects. 
+                                     I eventually needed to turn to object pooling to create a system that could keep
+                                      up with a fast update rate of rearranging the meshes while not slowing down the computer.
+                                       I decided to set up an object pooling system to spawn all the meshes as physical objects 
+                                       at the beginning of the application life cycle and then immediately disable them all. From there, 
+                                       as each mesh is requested, they are enabled into an active state where they are resized 
+                                       and formatted with the details to construct the mesh. During the next cycle, they would be
+                                        disabled again and then reactivated with new data. This avoided spawning meshes continuously 
+                                        by switching to an activating system that keeps them in memory between states. The project’s
+                                         main mechanic greatly benefited from this newer system and the frames per second went up exponentially.
+                                     This allowed us to maintain our target frame rate.
+                                  </p>
                                   <br> 
-                                </p>
-                      
                                 <hr style="width: 100%;">
 
                               </div>
