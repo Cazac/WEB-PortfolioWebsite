@@ -134,10 +134,14 @@
   
                       <!-- Main Description -->
                       <p>
-
-                        <br>
-                        <br>
-                      </p>
+                        <i>
+                          Sail the sunken seas in this artistically stylized prototype where I focus on the use of custom shaders, 
+                          Unity’s Shader Graph system, water physics and stencil buffers. 
+                          This project helped me create the exact shader that I used to protype my exploration game set on the open seas. 
+                          <br>
+                          <br>
+                        </i>
+                      </p>   
 
                       <!-- Icon Sets -->
                       <div class="project-info-container">
@@ -236,16 +240,38 @@
                           <hr>
                           
                           <p class="text-left">
-                 
+                            I started Sunken Seas as a full project, but as I was developing the prototype,
+                             I found that learning about the shader system was much more important skill to
+                              develop to further my career than the project itself. I did create a few basic 
+                              mechanics for Sunken Seas, such as player swapping and side scroller movement. 
+                              However, I decided the shaders had more impact. A lot of the requirements
+                               for the shader that I envisioned were relatively difficult to achieve. 
+                               I had to start from the ground and work my way up, learning both the unity shady graph as well as the
+                             programmable shaders so that I could merge the two together to achieve the desired effects I wanted.
+                            <br>
+                            <br>
+                            <br>
+                            <b>My major roles and tasks done on this project include:</b>
+                            <br>
+                            <br>
+                            -	Utilized Unity’s Shader Graph to build creative shaders
+                            <br>
+                            -	Merged both Shader Graph and programmed shader effects to create desired shaders
+                            <br>
+                            -	Developed a stencil buffer system for shaders
+                            <br>
+                            -	Implemented visual components of color and transparency 
+                            <br>
+                            -	Created vertex displacement shaders effects
                             <br> 
-                            <br> 
+                            <br>
                           </p>
                       
                         <!-- ////////////////////////////////////////////////////////////////////// -->
                     
                         <!-- Section Header -->
                         <h2 class="text-left">
-                          XXX
+                          Unity Shader Graph
                         </h2>
                         <hr style="width: 100%;">
 
@@ -262,14 +288,23 @@
 
                                 <hr style="width: 100%;">
                                 <br> 
-                  
-                                <p class="text-left">
-                  
-                                  <br> 
-                                  <br> 
+                                <p>
+                                  The Unity Shader Graph is a key component for artistic game development within Unity. 
+                                  Before the Unity Shader Graph, developers used pure code to generate shaders. 
+                                  This has been transformed into an easier to use “drag and drop” graph system.
+                                   While there are certainly gaps in this system’s abilities, it does provide a 
+                                   very useful role in development that is the perfect mix for both programmers 
+                                   and artists, allowing them to achieve artistic shaders with ease. I found that 
+                                   learning the system can be a bit challenging due to the vast number of options that
+                                    are presented to you. As I grew more comfortable with the system, I discovered
+                                     very intriguing and interesting options available to create different special 
+                                     effects or designs on shaders. The main shader that I created for Sunken Sea’s 
+                                     ocean scene used a mixture of techniques from the Unity Shader Graph with vertex
+                                      displacement that flows with time, transparency with coloration and many other tools provided to me. 
+                                  Overall, I think I was able to make something wonderful that I never would’ve been able to achieve with programming alone.
                                 </p>
-                      
-                                <hr style="width: 100%;">
+                                <br> 
+                              <hr style="width: 100%;">
 
                               </div>
                             </div>
@@ -281,7 +316,7 @@
 
                         <!-- Section Header -->
                         <h2 class="text-left">
-                          XXX
+                          Stencil Buffers & Layering
                         </h2>
                         <hr style="width: 100%;">
 
@@ -298,14 +333,27 @@
 
                                 <hr style="width: 100%;">
                                 <br> 
-                  
-                                <p class="text-left">
-                  
-                                  <br> 
-                                  <br> 
+                                <p>
+                                  During development, I foresaw the Sunken Seas shader as a moving 
+                                  ocean that ebbed and flowed up against the boat in a 3D format. 
+                                  The major issue that presented itself here was the interior of the 
+                                  boat would be filled with the ocean’s water in a regular environment
+                                   as the boat was submerged. Water flowing inside the boat instead
+                                    of the boat being inside of the water took a little bit of research
+                                     to understand how to solve, leading me to learn about stencil buffers.
+                                      Stencil buffers are a technique used to reorganize the drawing order.
+                                       I created a stencil buffer outline of where the ship is and told the
+                                        game not to render the shader in that area, allowing me to place the
+                                         ship inside of the water while not having the water flow through the 
+                                         ship. My next issue to solve was layering the shader on top of another 
+                                         shader as to provide a textured surface of the water while having a 
+                                         clear blue hue to the side view. This took a little bit of working with mathematics
+                                          to understand how to duplicate the vertex displacement on a new scale, 
+                                          but I managed to layer one shader on top and another that uses
+                                   the same time displacement with modified movement to sync up to each other and appear as one ocean.
                                 </p>
-                      
-                                <hr style="width: 100%;">
+                                <br> 
+                              <hr style="width: 100%;">
 
                               </div>
                             </div>

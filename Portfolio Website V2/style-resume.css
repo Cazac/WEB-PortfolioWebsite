@@ -303,4 +303,40 @@
    font-size:15px
  }
 
+ .linkable-img
+{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+
+.linkable-text
+{
+  padding-top: 14px;
+  padding-left: 60px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.info-links-btn
+{
+  height: 100%;
+
+
+  float: left;
+
+  font-size: large;
+  font-weight: bold;
+
+  border-left: 3px solid #575757;
+  border-right: 3px solid #575757;
+  border-bottom: 3px solid #575757;
+  border-top: 3px solid #575757;
+  border-radius: 20px;
+
+
+  margin: -5px;
+}
+
 /* ////////////////////////////////////////////////////////////////////// */

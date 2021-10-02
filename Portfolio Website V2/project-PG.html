@@ -134,10 +134,14 @@
   
                       <!-- Main Description -->
                       <p>
-      
-                        <br>
-                        <br>
-                      </p>
+                        <i>
+                          Many games use character customization to breathe life and content into their games. 
+                          During my time at Commanders of Valor, a 2D character customization was requested of me. So, 
+                          I envisioned and designed my own standalone system to bring that to life. Eventually the project was merged with the main game to integrate features.
+                          <br>
+                          <br>
+                        </i>
+                      </p> 
 
                       <!-- Icon Sets -->
                       <div class="project-info-container">
@@ -236,16 +240,37 @@
                           <hr>
                           
                           <p class="text-left">
-                  
+                            This portrait generator was my way of developing a customizable
+                             2D character creator. 2D customization can be a little 
+                             tricky to accomplish correctly and aspects of a 3D character
+                              generator don’t transfer. The lighting and blending can 
+                              become issues very quickly as development of layers are created. 
+                              I had to be a bit more creative to develop a large number of
+                               characters while using minimal art assets to create them.
+                                We decided that layering each image on top of each other for each section of
+                             a face could provide us with the results that we wanted when used with a little bit of blending.
+                            <br>
+                            <br>
+                            <br>
+                            <b>My major roles and tasks done on this project include:</b>
+                            <br>
+                            <br>
+                            -	Utilized the Unity engine to prototype 2D systems
+                            <br>
+                            -	Created file system exports for transparent images
+                            <br>
+                            -	Manipulated image data to create desired effects
+                            <br>
+                            -	Developed creative solutions to procedural generation problems
                             <br> 
-                            <br> 
+                            <br>
                           </p>
                       
                         <!-- ////////////////////////////////////////////////////////////////////// -->
                     
                         <!-- Section Header -->
                         <h2 class="text-left">
-                          XXX
+                          System Design
                         </h2>
                         <hr style="width: 100%;">
 
@@ -262,14 +287,22 @@
 
                                 <hr style="width: 100%;">
                                 <br> 
-                  
-                                <p class="text-left">
-                  
-                                  <br> 
-                                  <br> 
+                                <p>
+                                  The portrait generator went through a few iterations of 
+                                  design on the road to the final product. Many of the original
+                                   designs used layering images only in the back end and merged the file into
+                                    a single image before presenting it to the user. As the files took on more 
+                                    layers to become more complex, this became a bottle neck for performance. 
+                                    Many of the portraits were gaining upwards of 15 layers and needed to be processed
+                                     on to a single PNG. Layer by layer the images merged, making this process
+                                      increasingly more difficult to streamline without any hiccups in performance
+                                       and latency when called on demand. I developed an export feature for this
+                                        first iteration that I am quite proud of, and it works very well as a standalone design.
+                                         However, for the finalized version we needed to keep the layers done as separate images then hot swap them out
+                                   as rendering 15 images on top of each other was taxing on the system but created less bottlenecks for on demand generation.
                                 </p>
-                      
-                                <hr style="width: 100%;">
+                                <br> 
+                              <hr style="width: 100%;">
 
                               </div>
                             </div>
