@@ -54,7 +54,7 @@
   background-color: #282828;
 
   padding-bottom: 0px;   
-  padding-top: 6px;
+  padding-top: 8px;
 
   height:  45px;
   max-height: 45px;
@@ -106,7 +106,7 @@
 {
   border-top: 2px solid #575757;
   
-  width: 400px;
+  width: 350px;
 }
 
 .skill-snapshots-upper
@@ -118,7 +118,7 @@
 .skill-snapshots-upper hr
 {
   border-top: 2px solid #575757;
-  width: 400px;
+  width: 350px;
 }
 
 
