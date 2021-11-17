@@ -46,7 +46,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   margin-bottom: 30px;
   border-radius: 5px;
 
-  height: 330px;
+  height: 340px;
 }
 
 .about-hobbies
@@ -57,7 +57,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   margin-bottom: 30px;
   border-radius: 5px;
 
-  height: 330px;
+  height: 340px;
 }
 
 
@@ -66,7 +66,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .about-main hr
 {
   border-top: 2px solid #575757;
-  width: 350px;
+  align-self: center;
 }
 .about-hobbies hr
 {
@@ -86,7 +86,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
 {
   border-radius:5px;
   height: 50px;
-  width: 50px;
+  max-width: 50px;
+  min-width: 10px;
 
 /*
   border-left: 2px solid white;

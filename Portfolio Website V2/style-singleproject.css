@@ -83,7 +83,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .title-top hr
 {
   border-top: 2px solid #575757;
-  width: 300px;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
@@ -94,28 +93,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   background-color:black;
 }
 
-.project-top
-{
-  color: lightslategray;
-  background-color: #1d1919;
 
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-
-  height: 350px;
-
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  border-radius:5px;
-}
-.project-top hr
-{
-  border-top: 2px solid #575757;
-  width: 300px;
-}
 
 .project-bottom
 {
@@ -176,7 +154,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .project-name-title hr
 {
   border-top: 2px solid #575757;
-  width: 500px;
+
+
+
 }
 
 .info-img
