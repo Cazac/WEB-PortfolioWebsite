@@ -19,7 +19,20 @@
   }
 
   .mobile-seperator {
-    height: 200px;
+    height: 180px;
+  }
+}
+
+
+@media (min-width: 430px) 
+{ 
+  .scaled-resume-size {
+    width: 100%; 
+    height: 790px;
+  }
+
+  .mobile-seperator {
+    height: 0px;
   }
 }
 
@@ -31,6 +44,9 @@
     height: 790px;
   }
   
+  .mobile-seperator {
+    height: 0px;
+  }
 }
 
 /* Large (md) devices (768px and up) */
@@ -41,9 +57,9 @@
     height: 790px;
 }
 
-.mobile-seperator {
-  height: 0px;
-}
+  .mobile-seperator {
+    height: 0px;
+  }
 }
 
 /* Large (lg) devices (992px and up) */
