@@ -95,17 +95,16 @@
 {
   color: lightslategray;
   background-color: #1d1919;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*
-  background: linear-gradient(#282828, #1d1919, #1d1919, #1d1919,  #1d1919, #1d1919, #282828);
-  */
-
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 16px;
+  margin-right: 24px;
+  border-radius: 6px;
+  box-shadow: 8px 8px 2px #121212;
 }
 .project-snapshots-upper hr
 {
   border-top: 2px solid #575757;
-  
   width: 350px;
 }
 
@@ -113,7 +112,12 @@
 {
   color: lightslategray;
   background-color: #1d1919;
-
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 16px;
+  margin-right: 24px;
+  border-radius: 6px;
+  box-shadow: 8px 8px 2px #121212;
 }
 .skill-snapshots-upper hr
 {
