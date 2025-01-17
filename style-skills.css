@@ -32,10 +32,15 @@
 
 .skill-title
 {
+  padding-top: 5px;
+  padding-bottom: 10px;
   margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 8px;
   color: lightslategray;
   background-color: #1d1919;
-
+  border-radius: 6px;
+  box-shadow: 8px 8px 2px #121212;
 }
 .skill-title hr
 {
