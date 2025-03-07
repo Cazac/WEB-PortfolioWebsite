@@ -276,9 +276,11 @@
 .tile-item-title
 {
   font-family:'Quicksand',sans-serif;
-  color:white;
-  font-weight:100;
-  font-size:30px
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */

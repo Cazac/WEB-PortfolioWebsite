@@ -183,10 +183,10 @@
   font-family:'Quicksand',sans-serif;
   color:white;
   font-weight:100;
-  font-size:30px
+  font-size: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
-
-
 
 .tile-item-tags-container
 {
@@ -213,6 +213,13 @@
   border-radius:4px
 }
 
+.corner-banner-overlay {
+  position: absolute; 
+  top: 46px; 
+  left: 16px; 
+  width: 100%;
+  pointer-events: none;
+}
 
 .tagType-GameProject
 {
