@@ -10,13 +10,29 @@ var rarFileName = "";
 var targetImageName = "";
 var userPassword = "";
 
-////////////////////////////////////////////////////////////////////// -->
+//////////////////////////////////////////////////////////////////////
 
-var kickoffRarDownloaderSetup = function(inRarFilePath, inRarFileName, inTargetImageName, inUserPassword) {
+var getUserPassRarFile = function() {
+
+    fetch(rarFilePath)
+        .then(response => response.arrayBuffer())
+        .then(arrayBuffer => {
+
+        const blob = new Blob([arrayBuffer]);
+        const file = new File([blob], rarFileName, {type: blob.type, lastModified: Date.now() });
+
+        fileToUnrar = file;
+        startUnrar();
+    })
+    .catch(error => console.error('Error fetching the RAR file:', error));
+}
+
+
+
+
+var kickoffRarDownloaderSetup = function(inRarFilePath, inUserPassword) {
 
     rarFilePath = inRarFilePath;
-    rarFileName = inRarFileName;
-    targetImageName = inTargetImageName;
     userPassword = inUserPassword;
 
     var so = {loaded:downloadRarFiles}
@@ -32,7 +48,7 @@ var downloadRarFiles = function() {
         .then(arrayBuffer => {
 
         const blob = new Blob([arrayBuffer]);
-        const file = new File([blob], rarFileName, {type: blob.type, lastModified: Date.now() });
+        const file = new File([blob], "Replacement Rar Images", {type: blob.type, lastModified: Date.now() });
 
         fileToUnrar = file;
         startUnrar();
@@ -41,7 +57,7 @@ var downloadRarFiles = function() {
 }
 
 var errShow = function(errMsg) {
-    document.querySelector("#loadStatus").innerHTML = "<strong>" + errMsg + "</strong>"
+    //document.querySelector("#loadStatus").innerHTML = "<strong>" + errMsg + "</strong>"
 }
 
 var startUnrar = function(){
@@ -94,7 +110,11 @@ var startUnrar = function(){
                 FindAndAddFile(k, ret.ls[k]);
             })
 
-            document.querySelector("#loadStatus").innerHTML = "Finish decompression, used " + ((Date.now() - startTime) / 1000).toFixed(2) + " s"
+            //document.querySelector("#loadStatus").innerHTML = "Finish decompression, used " + ((Date.now() - startTime) / 1000).toFixed(2) + " s"
+
+
+            // Call the function to handle images in index.html
+            handleImagesInIndex(imagesFound);
 
         }).catch(errShow)
     };
