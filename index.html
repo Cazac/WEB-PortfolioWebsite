@@ -21,6 +21,7 @@
     <script src="./js/uncompress.js"></script>
     <script src="./js/rpc.js"></script>
     <script src="./js/extractpasswordrars.js"></script>
+    <script src="./js/utilities.js"></script>
   </head>
 
 <!-- ////////////////////////////////////////////////////////////////////// -->
@@ -130,11 +131,11 @@
               Hi, I’m Zachary Blouin - Welcome to my portfolio!
               <br>
               <br>
-              I’m a seasoned game programmer from BC, Canada, with a versatile skill set ranging from debugging 20+ year-old Blizzard codebases to creating audio clips for cutting-edge prototypes.
+              I’m a seasoned game programmer from BC, Canada, with a versatile skill set ranging from debugging 20+ year-old Blizzard codebases to creating new features in cutting-edge prototypes.
               <br>
               Since starting my professional journey in 2018, I’ve thrived as an engineering generalist, finding fulfillment in wearing multiple hats within the world of game development.
               <br>
-              While I am an engineering generalist at heart, my strongest passions lie in gameplay programming, prototyping, pitching designs, and crafting immersive UI/UX experiences.
+              While I am an engineering generalist at heart, my other passions lie in prototyping, pitching designs, and crafting immersive UI/UX experiences.
               <br>
               <br>
               This site serves as both a showcase of my game development milestones as well as a living gallery of personal projects that have shaped my journey.
@@ -439,87 +440,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <!-- Script for animation loading -->
+
     <script>
-      function pageLoadingTimeout() {
-        setTimeout(showPage, 500);
-      }
-    
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-      }
-
-      // Function to append current search params to the href
-      function appendSearchParamsToAllhrefs() {
-
-        // Get the login search params from the URL
-        var searchParams = window.location.search;
-
-        // Select all anchor elements on the page
-        var links = document.querySelectorAll('a');
-
-        // Iterate through the list and check if each link exists and is valid
-        links.forEach(link => {
-          
-          // Exclude carousel links and mailto links
-          if (link.href && !link.href.includes('#slides') && !link.href.startsWith('mailto:')) {
-            // Append the search params to the href
-            link.href += searchParams;
-          }
-          else {
-            console.log(`Skipping link: ${link.href}`);
-          }
-        });
-      }
-
-      function CheckRarDownloads() {
-        
-        const urlId = new URLSearchParams(window.location.search).get('id');
-        if (urlId)
-        {
-          const userId = urlId.split('-')[0];
-          var userPassword = urlId.split('-')[1];
-
-          if (userId && userPassword)
-          { 
-            var rarFilePath = "https://raw.githubusercontent.com/Cazac/WEB-PortfolioWebsite/main/images/Protected/" + userId + ".rar";
-            kickoffRarDownloaderSetup(rarFilePath, userPassword);
-          }
-        }
-        else {
-          console.log("No urlId found");
-        }
-      }
-
-      function handleImagesInIndex(images) {
-
-        const imageElements = document.querySelectorAll('.carousel-item img');
-        const imageMap = {};
-
-        // Create a mapping of filenames to image elements by name to be searched later
-        imageElements.forEach(img => {
-          const src = img.src.split('/').pop(); 
-          imageMap[src] = img;
-        });
-
-        console.log("Image Map:", imageMap);
-        console.log("Images Array:", images);
-
-        images.forEach(image => {
-          // Search by original filename
-          const imageName = image.name; 
-          const imgElement = imageMap[imageName];
-
-          if (imgElement) {
-            console.log("Replacing image:", imageName);
-            imgElement.src = URL.createObjectURL(image);
-          } else {
-            console.log("Image not found in carousel:", imageName);
-          }
-        });
-      }
-
       // Functions to be called when page is loaded
       window.onload = function() {
         CheckRarDownloads();

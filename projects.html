@@ -18,12 +18,16 @@
     <link href="style-projects.css" rel="stylesheet">
     <!-- Setup Website Icon -->
     <link rel="Icon" href="images/Icons/Icon-FavIconTTGD2.png">
+    <script src="./js/uncompress.js"></script>
+    <script src="./js/rpc.js"></script>
+    <script src="./js/extractpasswordrars.js"></script>
+    <script src="./js/utilities.js"></script>
   </head>
 
   <!-- ////////////////////////////////////////////////////////////////////// -->
 
   <!-- On body generation load the page with animations -->
-  <body onload="myFunction()" style="margin:0; overflow-y: scroll;">
+  <body style="margin:0; overflow-y: scroll;">
 
     <div style="background-color: #282828;">
 
@@ -613,50 +617,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
-     <!-- Script for animation loading -->
     <script>
-      function myFunction() {
-        showPage
-        setTimeout(showPage, 300);
-      }
-    
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-      }
-
-      // Factory function to create project tile cards
-      function createProjectTileCard(project) {
-        const { href, imageUrl, title, tags, bannerUrl } = project;
-
-        const tileCard = document.createElement('div');
-        tileCard.className = 'col-sm-12 col-md-6 col-lg-6 col-xl-3';
-
-        tileCard.innerHTML = `
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="${href}">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>${title}</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
-            <div class="tile-item-tags-container">
-              ${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
-            </div>
-          </div>
-        `;
-
-        return tileCard;
-      }
-
-
+      // Functions to be called when page is loaded
+      window.onload = function() {
+        CheckRarDownloads();
+        pageLoadingTimeout();
+        appendSearchParamsToAllhrefs();
+      };
     </script>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->

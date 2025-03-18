@@ -18,12 +18,16 @@
     <link href="style-singleproject.css" rel="stylesheet">
     <!-- Setup Website Icon -->
     <link rel="icon" href="images/Icons/Icon-FavIconTTGD2.png">
+    <script src="./js/uncompress.js"></script>
+    <script src="./js/rpc.js"></script>
+    <script src="./js/extractpasswordrars.js"></script>
+    <script src="./js/utilities.js"></script>
   </head>
 
 <!-- ////////////////////////////////////////////////////////////////////// -->
 
   <!-- On body generation load the page with animations -->
-  <body onload="myFunction()" style="margin:0; overflow-y: scroll;">
+  <body style="margin:0; overflow-y: scroll;">
     
     <div style="background-color: black;">
 
@@ -275,7 +279,10 @@
                             <div class="project-info-container">
                               <div class="project-gif-container">
                                 <div class="col-12">
-                                  <img style="width: 60%;" src="images/Gifs/Gif-IBS-Reading.gif">
+                                  <video class="video-container" preload="auto" autoplay loop muted>
+                                    <source src="images/Gifs/WEBM-IBS-Reading.webm" type="video/webm"></source>
+                                    Sorry, your browser doesn't support embedded videos.
+                                  </video>
                                 </div>
                               </div>
                               <div class="project-desc-container">
@@ -350,18 +357,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
-     <!-- Script for animation loading -->
     <script>
-      var myVar;
-    
-      function myFunction() {
-        myVar = setTimeout(showPage, 300);
-      }
-    
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-      }
+      // Functions to be called when page is loaded
+      window.onload = function() {
+        CheckRarDownloads();
+        pageLoadingTimeout();
+        appendSearchParamsToAllhrefs();
+      };
     </script>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->
