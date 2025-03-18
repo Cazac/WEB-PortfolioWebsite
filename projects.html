@@ -53,6 +53,370 @@
       </div>
     </nav>
 
+    <script>
+      const gameDevelopmentHighlights = [
+      {
+        //href: 'project-GGWC3.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-GGWC3.png',
+        title: 'Warcraft 3<br>Reforged - 2.0 Patch',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineOther', label: 'Custom Engine' },
+          { class: 'tagType-LanguageOther', label: 'C++' }
+
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        //href: 'project-GGDOK.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-DOK.png',
+        title: 'Homeworld Deserts<br>of Kharak - EOS Patch',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        //href: 'project-GGBS.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-BS.png',
+        title: 'Burning Sky',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineOther', label: 'Unreal Engine' },
+          { class: 'tagType-LanguageOther', label: 'C++' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        //href: 'project-TEO.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-TEO.png',
+        title: 'The Eternal Oath',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        href: 'project-COV.html',
+        imageUrl: 'images/Icons/Icon-COV.png',
+        title: 'Commanders Of Valor',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        //href: 'project-GGIS.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-IS.png',
+        title: 'Invasive Species',
+        tags: [
+        { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+          { class: 'tagType-EngineOther', label: 'Unreal Engine' },
+          { class: 'tagType-LanguageOther', label: 'C++' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        //href: 'project-GGST.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/Icon-ST.png',
+        title: 'Stunt Trains',
+        tags: [
+        { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+          { class: 'tagType-EngineOther', label: 'Unreal Engine' },
+          { class: 'tagType-LanguageOther', label: 'C++' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      
+      {
+        href: 'project-CTC.html',
+        imageUrl: 'images/Icons/Icon-CTC.png',
+        title: 'Crossing The Cosmos',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      }];
+
+      const gamePrototypes = [
+      {
+        href: 'project-TD.html',
+        imageUrl: 'images/Icons/Icon-TD.png',
+        title: 'Tera Dragon',
+        tags: [
+          { class: 'tagType-GameProject', label: 'Game Project' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      },
+
+      {
+        href: 'project-TM.html',
+        imageUrl: 'images/Icons/Icon-TM.png',
+        title: 'The Mountain',
+        tags: [
+          { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+        ],
+        bannerUrl: ''
+      },
+
+      {
+        href: 'project-DT.html',
+        imageUrl: 'images/Icons/Icon-DodoTown.png',
+        title: 'Dodo Town',
+        tags: [
+          { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+          { class: 'tagType-Skills', label: 'Highly Technical' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        //href: 'project-RPD.html',
+        href: 'projects.html',
+        imageUrl: 'images/Icons/icon-RPD.png',
+        title: 'Roly Poly Derby',
+        tags: [
+          { class: 'tagType-GameJam', label: 'Game Jam' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+      },
+      {
+        href: 'project-LTAS.html',
+        imageUrl: 'images/Icons/Icon-LTAS.png',
+        title: 'Let\'s Take a Selfie!',
+        tags: [
+        { class: 'tagType-GameJam', label: 'Game Jam' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-WB.html',
+        imageUrl: 'images/Icons/Icon-WB.png',
+        title: 'Wasteland Bots',
+        tags: [
+          { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+          { class: 'tagType-EngineOther', label: 'Unreal Engine' },
+          { class: 'tagType-LanguageOther', label: 'C++' }
+        ],
+        bannerUrl: ''
+      },
+      // {
+      //   href: 'project-DI.html',
+      //   imageUrl: 'images/Icons/Icon-IsleOfDodo.png',
+      //   title: 'Dodo Island',
+      //   tags: [
+      //     { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+      //     { class: 'tagType-EngineUnity', label: 'Unity' },
+      //     { class: 'tagType-LanguageCSharp', label: 'C#' }
+      //   ],
+      //   bannerUrl: ''
+      // },
+      // {
+      //   href: 'project-DC.html',
+      //   imageUrl: 'images/Icons/Icon-Chess.png',
+      //   title: 'Dummy Chess',
+      //   tags: [
+      //     { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+      //     { class: 'tagType-EngineUnity', label: 'Unity' },
+      //     { class: 'tagType-LanguageCSharp', label: 'C#' }
+      //   ],
+      //   bannerUrl: ''
+      // },
+      // {
+      //   href: 'project-IG.html',
+      //   imageUrl: 'images/Icons/Icon-IG.png',
+      //   title: 'Iron Gauntlet',
+      //   tags: [
+      //     { class: 'tagType-GamePrototype', label: 'Game Prototype' },
+      //     { class: 'tagType-EngineOther', label: 'Android Studio' },
+      //     { class: 'tagType-LanguageOther', label: 'Java' }
+      //   ],
+      //   bannerUrl: ''
+      // }
+      ];
+
+
+      const gameDevelopmentTools = [
+      {
+        href: 'project-USE.html',
+        imageUrl: 'images/Icons/Icon-Exporter.png',
+        title: 'Unity Scriptable Exporter',
+        tags: [
+          { class: 'tagType-GameTool', label: 'Game Tool' },
+          { class: 'tagType-EngineOther', label: '.NET Core' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+          { class: 'tagType-Skills', label: 'Highly Technical' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-SM.html',
+        imageUrl: 'images/Icons/Icon-ShadowMesh.png',
+        title: 'Shadow Meshes',
+        tags: [
+          { class: 'tagType-GameTool', label: 'Game Tool' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+          { class: 'tagType-Skills', label: 'Highly Technical' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-PG.html',
+        imageUrl: 'images/Icons/Icon-Portrait.png',
+        title: '2D Portrait Generator',
+        tags: [
+          { class: 'tagType-GameTool', label: 'Game Tool' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-SS.html',
+        imageUrl: 'images/Icons/Icon-SS.png',
+        title: 'Custom Sea Shaders',
+        tags: [
+          { class: 'tagType-GameTool', label: 'Game Tool' },
+          { class: 'tagType-EngineUnity', label: 'Unity' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-GDD.html',
+        imageUrl: 'images/Icons/Icon-GameDesign.png',
+        title: 'Game Design Documents',
+        tags: [
+          { class: 'tagType-GameTool', label: 'Game Tool' },
+          { class: 'tagType-Skills', label: 'Design Skills' }
+        ],
+        bannerUrl: ''
+      },
+      // {
+      //   href: 'project-FTKC.html',
+      //   imageUrl: 'images/Icons/Icon-FTKApp.png',
+      //   title: 'For The King - Companion App',
+      //   tags: [
+      //     { class: 'tagType-GameTool', label: 'Game Tool' },
+      //     { class: 'tagType-EngineOther', label: 'Node.JS' },
+      //     { class: 'tagType-LanguageOther', label: 'JavaScript' }
+      //   ],
+      //   bannerUrl: ''
+      // }
+      ];
+
+      const miscellaneousSideProjects = [
+      {
+        href: 'project-VRPS.html',
+        imageUrl: 'images/Icons/Icon-VRPS.png',
+        title: 'VR Play Space',
+        tags: [
+          { class: 'tagType-BusinessApp', label: 'Entrepreneurial Business' },
+          { class: 'tagType-EngineOther', label: 'VR' },
+          { class: 'tagType-Skills', label: 'Soft Skills' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-RPWS.html',
+        imageUrl: 'images/Icons/Icon-Pi.png',
+        title: 'Raspberry Pi Web Server',
+        tags: [
+          { class: 'tagType-BusinessApp', label: 'Business Application' },
+          { class: 'tagType-Skills', label: 'Network Technologies' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-KPUFS.html',
+        imageUrl: 'images/Icons/Icon-KPUFS.png',
+        title: 'KPU Faculty Scheduler',
+        tags: [
+          { class: 'tagType-BusinessApp', label: 'Business Application' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+          { class: 'tagType-Skills', label: 'Highly Technical' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-IBS.html',
+        imageUrl: 'images/Icons/Icon-Stenography.png',
+        title: 'Image Based Stenography',
+        tags: [
+          { class: 'tagType-BusinessApp', label: 'Business Application' },
+          { class: 'tagType-LanguageCSharp', label: 'C#' },
+          { class: 'tagType-Skills', label: 'Highly Technical' }
+        ],
+        bannerUrl: ''
+      },
+      {
+        href: 'project-PW.html',
+        imageUrl: 'images/Icons/Icon-Website.png',
+        title: 'Portfolio Website',
+        tags: [
+          { class: 'tagType-BusinessApp', label: 'Business Application' },
+          { class: 'tagType-LanguageOther', label: 'HTML' },
+          { class: 'tagType-Skills', label: 'Design Skills' }
+        ],
+        bannerUrl: ''
+      }];
+
+      // Factory function to create project tile cards
+      function createProjectTileCard(project) {
+        const { href, imageUrl, title, tags, bannerUrl } = project;
+
+        const tileCard = document.createElement('div');
+        tileCard.className = 'col-sm-12 col-md-6 col-lg-6 col-xl-3';
+
+        tileCard.innerHTML = `
+          <div class="tile-item-container">
+            <div class="smalldropshadow">
+              <a href="${href}">
+                <div class="tile-item">
+                  <div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
+                  <div class="tile-item-title-container">
+                    <div class="tile-item-title">
+                      <span>${title}</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
+            <div class="tile-item-tags-container">
+              ${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
+            </div>
+          </div>
+        `;
+
+        return tileCard;
+      }
+    </script>
+
     <!-- ////////////////////////////////////////////////////////////////////// -->
 
     <!-- Loader Div that uses the loading animation Icon -->
@@ -68,917 +432,152 @@
        
       <!-- ////////////////////////////////////////////////////////////////////// -->
 
-        <!-- About Me Top Section -->
-        <div class="container-fluid" style="width: 85%">
-
-          <!-- ////////////////////////////////////////////////////////////////////// -->
-
-          <div class="row text-center">
-            <!-- Bootstrap grid is 12 cols to fill the page 100% -->
-            <div class="col-12">
-              <div class="title-top">
-                <div class="desc-text-container">
-                  <h1>
-                    Projects
-                  </h1>
-                  <hr style="width: 250px;">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-              
-        <!-- Skills Title Section -->
-        <div class="container-fluid">
-          <div class="row text-left skill-title">
-            <!-- Bootstrap grid is 12 cols to fill the page 100% -->
-            <div class="col-12">
-              <h1 class="">
-                Full Game Projects
-              </h1>
-              <div style="max-width: 350px; min-width: 350px;">
-                <hr width="100%">
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- About Me Top Section -->
+      <div class="container-fluid" style="width: 85%">
 
         <!-- ////////////////////////////////////////////////////////////////////// -->
 
-        <!-- Project Snapshots Lower Section -->      
-        <div class="container-fluid" style="width: 80%">
-          <div class="row text-center justify-content-center tile-section">
-
-            <!-- ////////////////////////////////////////////////////////////////////// -->
-
-            <!-- Project Snapshots Tile Card -->  
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-COV.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-COV.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>Commanders Of Valor</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+        <div class="row text-center">
+          <!-- Bootstrap grid is 12 cols to fill the page 100% -->
+          <div class="col-12">
+            <div class="title-top">
+              <div class="desc-text-container">
+                <h1>
+                  Projects
+                </h1>
+                <hr style="width: 250px;">
               </div>
-
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container ">
-                <div class="tile-item-tag tagType-GameProject minidropshadow">
-                  <span>Game Project</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                  <span>Unity</span>
-                </div>
-                <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                  <span>C#</span>
-                </div>
-              </div>
-          
             </div>
           </div>
-
-
-
-
-
-
-           <!-- Project Snapshots Tile Card -->  
-           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-CTC.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-CTC.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>Crossing The Cosmos</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container">
-                <div class="tile-item-tag tagType-GameProject minidropshadow">
-                  <span>Game Project</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                  <span>Unity</span>
-                </div>
-                <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                  <span>C#</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Project Snapshots Tile Card -->  
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-LTAS.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-LTAS.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>Let's Take a Selfie!</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container">
-                <div class="tile-item-tag tagType-GameProject minidropshadow">
-                  <span>Game Project</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                  <span>Unity</span>
-                </div>
-                <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                  <span>C#</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Project Snapshots Tile Card -->  
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-TD.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-TD.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>Tera Dragon</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container">
-                <div class="tile-item-tag tagType-GameProject minidropshadow">
-                  <span>Game Project</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                  <span>Unity</span>
-                </div>
-                <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                  <span>C#</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          
-
-
-          <!-- ////////////////////////////////////////////////////////////////////// -->
-
         </div>
       </div>
 
-    <!-- ////////////////////////////////////////////////////////////////////// -->
-
-    <!-- Skills Title Section -->
-    <div class="container-fluid">
-      <div class="row text-left skill-title">
-        <!-- Bootstrap grid is 12 cols to fill the page 100% -->
-        <div class="col-12">
-          <h1 class="">
-            Game Prototypes
-          </h1>
-          <div style="max-width: 330px; min-width: 330px;">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- ////////////////////////////////////////////////////////////////////// -->
-
-    <!-- Project Snapshots Lower Section -->      
-    <div class="container-fluid" style="width: 80%">
-      <div class="row text-center justify-content-center tile-section">
-
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-
-
-        <!-- Project Snapshots Tile Card -->  
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-TM.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-TM.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>The Mountain</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Design Skills</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      
-
-
-
-        <!-- Project Snapshots Tile Card -->  
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-SM.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-ShadowMesh.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Shadow Meshes</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Highy Technical</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-     
-       
-
-          <!-- Project Snapshots Tile Card -->  
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-DT.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-DodoTown.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Dodo Town</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Highy Technical</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!--
-
-
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-DI.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-IsleOfDodo.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Dodo Island</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-             <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-            </div>
-
-          </div>
-        </div> 
-
-      -->  
-        
- <!--
-
-
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-DC.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Chess.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Dummy Chess</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-     
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-Tools minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        -->  
-
-          <!-- Project Snapshots Tile Card -->  
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-WB.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-WB.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>Wasteland Bots</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container">
-                <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                  <span>Game Prototype</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineOther minidropshadow">
-                  <span>Unreal Engine</span>
-                </div>
-                <div class="tile-item-tag tagType-LanguageOther minidropshadow">
-                  <span>C++</span>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-
-
-
-           <!--
-        
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-IG.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-IG.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Iron Gauntlet</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GamePrototype minidropshadow">
-                <span>Game Prototype</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineOther minidropshadow">
-                <span>Android Studio</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageOther minidropshadow">
-                <span>Java</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
- -->
-
-
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-
-      </div>
-    </div>
-
-       <!-- ////////////////////////////////////////////////////////////////////// -->
-
-     <!-- Skills Title Section -->
-     <div class="container-fluid">
-      <div class="row text-left skill-title">
-        <!-- Bootstrap grid is 12 cols to fill the page 100% -->
-        <div class="col-12">
-          <h1 class="">
-            Game Tools
-          </h1>
-          <div style="max-width: 230px; min-width: 230px;">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ////////////////////////////////////////////////////////////////////// -->
-
-    <!-- Project Snapshots Lower Section -->      
-    <div class="container-fluid" style="width: 80%">
-      <div class="row text-center justify-content-center tile-section">
-
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-
-       
-        <!-- Project Snapshots Tile Card -->  
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-USE.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Exporter.png')">
-                  </div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Unity Scriptable Exporter</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          <!-- Project Tags -->  
-          <div class="tile-item-tags-container">
-            <div class="tile-item-tag tagType-GameTool minidropshadow">
-              <span>Game Tool</span>
-            </div>
-            <div class="tile-item-tag tagType-EngineOther minidropshadow">
-              <span>.NET Core</span>
-            </div>
-            <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-              <span>C#</span>
-            </div>
-            <div class="tile-item-tag tagType-Skills minidropshadow">
-              <span>Highy Technical</span>
-            </div>
-          </div>
-
-          </div>
-        </div>
-
-
-         
-
-         <!-- Project Snapshots Tile Card -->  
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-PG.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Portrait.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>2D Portrait Generator</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+      <!-- ////////////////////////////////////////////////////////////////////// -->
             
-            
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GameTool minidropshadow">
-                <span>Game Tool</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-                <span>Unity</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
+      <!-- Skills Title Section -->
+      <div class="container-fluid">
+        <div class="row text-left skill-title">
+          <!-- Bootstrap grid is 12 cols to fill the page 100% -->
+          <div class="col-12">
+            <h1 class="">
+              Game Development Highlights
+            </h1>
+            <div style="max-width: 600px; min-width: 600px;">
+              <hr width="100%">
             </div>
-
-          </div>
-        </div>
-
-        
-      <!-- Project Snapshots Tile Card -->  
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-        <div class="tile-item-container">
-          <div class="smalldropshadow">
-            <a href="project-SS.html">
-              <div class="tile-item">
-                <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-SS.png')"></div>
-                <div class="tile-item-title-container">
-                  <div class="tile-item-title">
-                    <span>Custom Sea Shaders</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Project Tags -->  
-          <div class="tile-item-tags-container">
-            <div class="tile-item-tag tagType-GameTool minidropshadow">
-              <span>Game Tool</span>
-            </div>
-            <div class="tile-item-tag tagType-EngineUnity minidropshadow">
-              <span>Unity</span>
-            </div>
-            <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-              <span>C#</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-            <!-- Project Snapshots Tile Card -->  
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-GDD.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-GameDesign.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Game Design Documents</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GameTool minidropshadow">
-                <span>Game Tool</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Design Skills</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        
-
-
- <!--
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-FTKC.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-FTKApp.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>For The King - Companion App</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-GameTool minidropshadow">
-                <span>Game Tool</span>
-              </div>
-              <div class="tile-item-tag tagType-EngineOther minidropshadow">
-                <span>Node.JS</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageOther minidropshadow">
-                <span>JavaScript</span>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-
- -->
-       
-
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-
-      </div>
-    </div>
-
-    <!-- ////////////////////////////////////////////////////////////////////// -->
-
-    <!-- Skills Title Section -->
-    <div class="container-fluid">
-      <div class="row text-left skill-title">
-        <!-- Bootstrap grid is 12 cols to fill the page 100% -->
-        <div class="col-12">
-          <h1 class="">
-            Miscellaneous Projects
-          </h1>
-          <div style="max-width: 430px; min-width: 350px;">
-            <hr>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- ////////////////////////////////////////////////////////////////////// -->
 
       <!-- Project Snapshots Lower Section -->      
       <div class="container-fluid" style="width: 80%">
         <div class="row text-center justify-content-center tile-section">
 
-          <!-- ////////////////////////////////////////////////////////////////////// -->
-
-          <!-- Project Snapshots Tile Card -->  
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="tile-item-container">
-              <div class="smalldropshadow">
-                <a href="project-VRPS.html">
-                  <div class="tile-item">
-                    <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-VRPS.png')"></div>
-                    <div class="tile-item-title-container">
-                      <div class="tile-item-title">
-                        <span>VR Play Space</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project Tags -->  
-              <div class="tile-item-tags-container">
-                <div class="tile-item-tag tagType-BusinessApp minidropshadow">
-                  <span>Entrepreneurial Business</span>
-                </div>
-                <div class="tile-item-tag tagType-EngineOther minidropshadow">
-                  <span>VR</span>
-                </div>
-                <div class="tile-item-tag tagType-Skills minidropshadow">
-                  <span>Soft Skills</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-                  
-         <!-- Project Snapshots Tile Card -->  
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-RPWS.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Pi.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Raspberry Pi Web Server</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-BusinessApp minidropshadow">
-                <span>Business Application</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Network Technologies</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-   
-
-   
-
-    
-
-                  
-       
-
- <!--
-         
-               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                <div class="tile-item-container">
-                  <div class="smalldropshadow">
-                    <a href="project-CNC.html">
-                      <div class="tile-item">
-                        <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Cisco.png')"></div>
-                        <div class="tile-item-title-container">
-                          <div class="tile-item-title">
-                            <span>Cisco Networking Certifications</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-      
-         
-                  <div class="tile-item-tags-container">
-                    <div class="tile-item-tag tagType-Skills minidropshadow">
-                      <span>Network Technologies</span>
-                    </div>
-                    <div class="tile-item-tag tagType-Skills minidropshadow">
-                      <span>Highy Technical</span>
-                    </div>
-                  </div>
-      
-                </div>
-              </div>
-                
-        -->  
-     
-
-         <!-- Project Snapshots Tile Card -->  
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-KPUFS.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-KPUFS.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>KPU Faculty Scheduler</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-BusinessApp minidropshadow">
-                <span>Business Application</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Highy Technical</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-         <!-- Project Snapshots Tile Card -->  
-         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="project-IBS.html">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Stenography.png')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>Image Based Stenography</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Project Tags -->  
-            <div class="tile-item-tags-container">
-              <div class="tile-item-tag tagType-BusinessApp minidropshadow">
-                <span>Business Application</span>
-              </div>
-              <div class="tile-item-tag tagType-LanguageCSharp minidropshadow">
-                <span>C#</span>
-              </div>
-              <div class="tile-item-tag tagType-Skills minidropshadow">
-                <span>Highy Technical</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-       <!-- Project Snapshots Tile Card -->  
-       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-        <div class="tile-item-container">
-          <div class="smalldropshadow">
-            <a href="project-PW.html">
-              <div class="tile-item">
-                <div class="tile-item-bg" style="background-image: url('images/Icons/Icon-Website.png')"></div>
-                <div class="tile-item-title-container">
-                  <div class="tile-item-title">
-                    <span>Portfolio Website</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Project Tags -->  
-          <div class="tile-item-tags-container">
-            <div class="tile-item-tag tagType-BusinessApp minidropshadow">
-              <span>Business Application</span>
-            </div>
-            <div class="tile-item-tag tagType-LanguageOther minidropshadow">
-              <span>HTML</span>
-            </div>
-            <div class="tile-item-tag tagType-Skills minidropshadow">
-              <span>Design Skills</span>
-            </div>
-          </div>
-
+          <!-- Project tiles will be appended here by JavaScript -->
+          <script>
+            gameDevelopmentHighlights.forEach(project => {
+              const tileCard = createProjectTileCard(project);
+              document.write(tileCard.outerHTML);
+            });
+          </script>
         </div>
       </div>
 
-       
+      <!-- ////////////////////////////////////////////////////////////////////// -->
 
-        <!-- ////////////////////////////////////////////////////////////////////// -->
-
+      <!-- Skills Title Section -->
+      <div class="container-fluid">
+        <div class="row text-left skill-title">
+          <!-- Bootstrap grid is 12 cols to fill the page 100% -->
+          <div class="col-12">
+            <h1 class="">
+              Game Prototypes / Game Jams
+            </h1>
+            <div style="max-width: 580px; min-width: 580px;">
+              <hr>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    
+
+      <!-- Project Snapshots Lower Section -->
+      <div class="container-fluid" style="width: 80%;">
+        <div class="row text-center justify-content-center tile-section">
+
+          <!-- Project tiles will be appended here by JavaScript -->
+          <script>
+            gamePrototypes.forEach(project => {
+              const tileCard = createProjectTileCard(project);
+              document.write(tileCard.outerHTML);
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////////////////////////////////// -->
+
+      <!-- Skills Title Section -->
+      <div class="container-fluid">
+        <div class="row text-left skill-title">
+          <!-- Bootstrap grid is 12 cols to fill the page 100% -->
+          <div class="col-12">
+            <h1 class="">
+              Game Development Tools
+            </h1>
+            <div style="max-width: 500px; min-width: 500px;">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Snapshots Lower Section -->      
+      <div class="container-fluid" style="width: 80%">
+        <div class="row text-center justify-content-center tile-section">
+
+          <!-- Project tiles will be appended here by JavaScript -->
+          <script>
+            gameDevelopmentTools.forEach(project => {
+              const tileCard = createProjectTileCard(project);
+              document.write(tileCard.outerHTML);
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////////////////////////////////// -->
+
+      <!-- Miscellaneous Side Projects Section -->
+      <div class="container-fluid">
+        <div class="row text-left skill-title">
+          <!-- Bootstrap grid is 12 cols to fill the page 100% -->
+          <div class="col-12">
+            <h1 class="">
+              Miscellaneous Side Projects
+            </h1>
+            <div style="max-width: 600px; min-width: 600px;">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Section -->      
+      <div class="container-fluid" style="width: 80%">
+        <div class="row text-center justify-content-center tile-section">
+
+          <!-- Project tiles will be appended here by JavaScript -->
+          <script>
+            miscellaneousSideProjects.forEach(project => {
+              const tileCard = createProjectTileCard(project);
+              document.write(tileCard.outerHTML);
+            });
+          </script>
+        </div>
+      </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
     <br>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->
@@ -1003,10 +602,8 @@
       </div>
     </footer>
 
-
-
     </div>
-    </div>
+  </div>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->
 
@@ -1018,17 +615,48 @@
   
      <!-- Script for animation loading -->
     <script>
-      var myVar;
-    
       function myFunction() {
         showPage
-        myVar = setTimeout(showPage, 300);
+        setTimeout(showPage, 300);
       }
     
       function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("myDiv").style.display = "block";
       }
+
+      // Factory function to create project tile cards
+      function createProjectTileCard(project) {
+        const { href, imageUrl, title, tags, bannerUrl } = project;
+
+        const tileCard = document.createElement('div');
+        tileCard.className = 'col-sm-12 col-md-6 col-lg-6 col-xl-3';
+
+        tileCard.innerHTML = `
+          <div class="tile-item-container">
+            <div class="smalldropshadow">
+              <a href="${href}">
+                <div class="tile-item">
+                  <div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
+                  <div class="tile-item-title-container">
+                    <div class="tile-item-title">
+                      <span>${title}</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
+            <div class="tile-item-tags-container">
+              ${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
+            </div>
+          </div>
+        `;
+
+        return tileCard;
+      }
+
+
     </script>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->
