@@ -27,9 +27,6 @@ var getUserPassRarFile = function() {
     .catch(error => console.error('Error fetching the RAR file:', error));
 }
 
-
-
-
 var kickoffRarDownloaderSetup = function(inRarFilePath, inUserPassword) {
 
     rarFilePath = inRarFilePath;

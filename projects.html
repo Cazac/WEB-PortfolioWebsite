@@ -60,8 +60,7 @@
     <script>
       const gameDevelopmentHighlights = [
       {
-        //href: 'project-GGWC3.html',
-        href: 'projects.html',
+        href: 'project-GG-WC3.html',
         imageUrl: 'images/Icons/Icon-GGWC3.png',
         title: 'Warcraft 3<br>Reforged - 2.0 Patch',
         tags: [
@@ -70,11 +69,10 @@
           { class: 'tagType-LanguageOther', label: 'C++' }
 
         ],
-        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+        bannerUrl: ''
       },
       {
-        //href: 'project-GGDOK.html',
-        href: 'projects.html',
+        href: 'project-GG-HWDOK.html',
         imageUrl: 'images/Icons/Icon-DOK.png',
         title: 'Homeworld Deserts<br>of Kharak - EOS Patch',
         tags: [
@@ -82,11 +80,11 @@
           { class: 'tagType-EngineUnity', label: 'Unity' },
           { class: 'tagType-LanguageCSharp', label: 'C#' }
         ],
-        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+        bannerUrl: ''
       },
       {
-        //href: 'project-GGBS.html',
-        href: 'projects.html',
+        //href: 'project-GG-BS.html',
+        href: '',
         imageUrl: 'images/Icons/Icon-BS.png',
         title: 'Burning Sky',
         tags: [
@@ -97,8 +95,7 @@
         bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
       },
       {
-        //href: 'project-TEO.html',
-        href: 'projects.html',
+        href: 'project-TEO.html',
         imageUrl: 'images/Icons/Icon-TEO.png',
         title: 'The Eternal Oath',
         tags: [
@@ -106,7 +103,7 @@
           { class: 'tagType-EngineUnity', label: 'Unity' },
           { class: 'tagType-LanguageCSharp', label: 'C#' }
         ],
-        bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
+        bannerUrl: ''
       },
       {
         href: 'project-COV.html',
@@ -120,8 +117,8 @@
         bannerUrl: ''
       },
       {
-        //href: 'project-GGIS.html',
-        href: 'projects.html',
+        //href: 'project-GG-IS.html',
+        href: '',
         imageUrl: 'images/Icons/Icon-IS.png',
         title: 'Invasive Species',
         tags: [
@@ -132,8 +129,8 @@
         bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
       },
       {
-        //href: 'project-GGST.html',
-        href: 'projects.html',
+        //href: 'project-GG-ST.html',
+        href: '',
         imageUrl: 'images/Icons/Icon-ST.png',
         title: 'Stunt Trains',
         tags: [
@@ -143,7 +140,6 @@
         ],
         bannerUrl: 'images/Icons/Icon-RedBannerWIP.png'
       },
-      
       {
         href: 'project-CTC.html',
         imageUrl: 'images/Icons/Icon-CTC.png',
@@ -195,7 +191,7 @@
       },
       {
         //href: 'project-RPD.html',
-        href: 'projects.html',
+        href: '',
         imageUrl: 'images/Icons/icon-RPD.png',
         title: 'Roly Poly Derby',
         tags: [
@@ -388,37 +384,6 @@
         ],
         bannerUrl: ''
       }];
-
-      // Factory function to create project tile cards
-      function createProjectTileCard(project) {
-        const { href, imageUrl, title, tags, bannerUrl } = project;
-
-        const tileCard = document.createElement('div');
-        tileCard.className = 'col-sm-12 col-md-6 col-lg-6 col-xl-3';
-
-        tileCard.innerHTML = `
-          <div class="tile-item-container">
-            <div class="smalldropshadow">
-              <a href="${href}">
-                <div class="tile-item">
-                  <div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
-                  <div class="tile-item-title-container">
-                    <div class="tile-item-title">
-                      <span>${title}</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
-            <div class="tile-item-tags-container">
-              ${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
-            </div>
-          </div>
-        `;
-
-        return tileCard;
-      }
     </script>
 
     <!-- ////////////////////////////////////////////////////////////////////// -->

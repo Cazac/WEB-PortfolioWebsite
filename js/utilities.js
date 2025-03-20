@@ -79,31 +79,55 @@ function handleImagesInIndex(images) {
 
 // Factory function to create project tile cards
 function createProjectTileCard(project) {
-	const { href, imageUrl, title, tags, bannerUrl } = project;
+	const { href, imageUrl, title, tags, bannerUrl, inlineStyle } = project;
 
 	const tileCard = document.createElement('div');
 	tileCard.className = 'col-sm-12 col-md-6 col-lg-6 col-xl-3';
 
-	tileCard.innerHTML = `
-	  <div class="tile-item-container">
-		<div class="smalldropshadow">
-		  <a href="${href}">
-			<div class="tile-item">
-			  <div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
-			  <div class="tile-item-title-container">
-				<div class="tile-item-title">
-				  <span>${title}</span>
+	if (href != "") {
+		tileCard.innerHTML = `
+		<div class="tile-item-container">
+		  <div class="smalldropshadow">
+			<a href="${href}">
+			  <div class="tile-item" style="'${inlineStyle}'">
+				<div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
+				<div class="tile-item-title-container">
+				  <div class="tile-item-title">
+					<span>${title}</span>
+				  </div>
 				</div>
 			  </div>
-			</div>
-		  </a>
+			</a>
+		  </div>
+		  ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
+		  <div class="tile-item-tags-container">
+			${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
+		  </div>
 		</div>
-		${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
-		<div class="tile-item-tags-container">
-		  ${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
+	  `;
+	}
+	else {
+		tileCard.innerHTML = `
+		<div class="tile-item-container">
+		  <div class="smalldropshadow">
+			  <div class="tile-item" style="opacity: 0.4;">
+				<div class="tile-item-bg" style="background-image: url('${imageUrl}')"></div>
+				<div class="tile-item-title-container">
+				  <div class="tile-item-title">
+					<span>${title}</span>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  ${bannerUrl ? `<img class="corner-banner-overlay" src="${bannerUrl}" />` : ''}
+		  <div class="tile-item-tags-container">
+			${tags.map(tag => `<div class="tile-item-tag ${tag.class} minidropshadow"><span>${tag.label}</span></div>`).join('')}
+		  </div>
 		</div>
-	  </div>
-	`;
+	  `;
+	}
+
+	
 
 	return tileCard;
   }
