@@ -129,6 +129,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 /* ////////////////////////////////////////////////////////////////////// */
 
+.bullet-point-image {
+  margin-bottom: 3px;
+  margin-right: 6px; 
+  width: 13px; 
+  height: 13px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
 .project-info-container {
   border-radius: 20px;
 
